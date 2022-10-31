@@ -1,0 +1,17 @@
+       // let multiply = function(x,y){
+        //     console.log(x*y)
+        // }
+       console.log("function currying");
+       console.log("-------------------------")
+
+        let multiply = function (x) {
+            return function(y){
+                console.log(x*y)
+            }
+        }
+
+        let multiplyByTwo = multiply(2)
+        let multiplyByThree = multiply( 3)
+        
+        multiplyByTwo(5)  
+        multiplyByThree(5)
